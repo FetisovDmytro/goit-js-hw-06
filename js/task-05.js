@@ -5,7 +5,7 @@ const refs = {
 
 const editText = () => {
   refs.textOutput.textContent =
-    refs.textInput.value === ""
+    refs.textInput.value.trim() === ""
       ? (refs.textOutput.textContent = "Anonymous")
       : (refs.textOutput.textContent = refs.textInput.value);
 };
